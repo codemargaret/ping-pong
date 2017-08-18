@@ -1,12 +1,17 @@
-# _{Application Name}_
+# _Ping-Pong_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _{Brief description of application}, 08.18.2017_
 
 #### By _**Margaret Berry**_
 
 ## Description
 
 _{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+
+## Specifications
+* _It can count up to the provided number._
+* _Example input: 2_
+* _Example output: [1,2]_
 
 ## Setup/Installation Requirements
 
