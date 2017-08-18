@@ -1,7 +1,6 @@
 //Back end
 var numberList = [];
-// var numberString = [];
-finalList = [];
+var finalList = [];
 
 //Generate list from 1 to user number
 function countToNumber(userNumber){
@@ -35,8 +34,7 @@ $(document).ready(function(){
     event.preventDefault();
     var userNumber = parseInt($('input#userNumber').val());
     countToNumber(userNumber);
-    // makeString(numberList);
     makeFinalList(numberList);
-    $('#result').text(finalList);
+    $('#finalList').text(finalList);
   });
 });
