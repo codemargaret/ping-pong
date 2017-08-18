@@ -13,6 +13,10 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 * _Example input: 2_
 * _Example output: [1,2]_
 
+* _Numbers divisible by 3 are replaced with "ping."_
+* _Example input: 6_
+* _Example output: [1,2, ping, 4, 5, ping]_
+
 ## Setup/Installation Requirements
 
 * _This is a great place_
