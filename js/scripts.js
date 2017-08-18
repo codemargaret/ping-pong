@@ -24,10 +24,6 @@ function makeFinalList(numberList) {
   }
 }
 
-// function makeString(numberList){
-//   numberString = numberList.toString().split(',');
-// }
-
 //Front end
 $(document).ready(function(){
   $('form#number').submit(function(event){
@@ -36,5 +32,12 @@ $(document).ready(function(){
     countToNumber(userNumber);
     makeFinalList(numberList);
     $('#finalList').text(finalList);
+
+    $('#reset').click(function(){
+      $('#number').text();
+      $('#finalList').empty();
+      numberList = [];
+      finalList = [];
+    });
   });
 });
