@@ -9,17 +9,17 @@ function countToNumber(userNumber){
   }
 }
 
+//Replace numbers with words and output as list
 function makeFinalList(numberList) {
   for(var j = 1; j <= numberList.length; j++){
     if ( ((j % 3) !== 0) && ((j % 5) !== 0)){
-      finalList.push(j);
+      finalList.push("<li>" + j + "</li>");
     } else if (j % 15 === 0) {
-      finalList.push("ping-pong");
-      console.log(finalList);
+      finalList.push("<li class='purple-ping-pong'>" + "ping-pong" + "</li>");
     } else if (j % 5 === 0){
-      finalList.push("pong");
+      finalList.push("<li class='blue-pong'>" + "pong" + "</li>");
     } else if (j % 3 === 0){
-      finalList.push("ping");
+      finalList.push("<li class='red-ping'>" + "ping" + "</li>");
     }
   }
 }
@@ -31,13 +31,12 @@ $(document).ready(function(){
     var userNumber = parseInt($('input#userNumber').val());
     countToNumber(userNumber);
     makeFinalList(numberList);
-    $('#finalList').text(finalList);
-
-    $('#reset').click(function(){
-      $('#number').text();
-      $('#finalList').empty();
-      numberList = [];
-      finalList = [];
-    });
+    $('#finalList').append(finalList);
+  });
+  $('#reset').click(function(){
+    $('#number').text();
+    $('#finalList').empty();
+    numberList = [];
+    finalList = [];
   });
 });
