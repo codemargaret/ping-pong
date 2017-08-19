@@ -6,7 +6,7 @@
 
 ## Description
 
-_Description_
+_The user inputs a number, and the site produces a list of numbers from one to the user number. All multiples of 3 are replaced with 'ping,' multiples of 5 with 'pong,' and multiples of 15 with 'ping-pong.'_
 
 ## Specifications
 * _It can count up to the provided number._
