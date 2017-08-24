@@ -1,6 +1,6 @@
 # _Ping-Pong_
 
-#### _A program that takes a number from the user and returns a range of numbers from one to the chosen number with certain multiples replaced, 08.18.2017_
+#### _A program that takes a number from the user and returns a range of numbers from one to the chosen number with certain multiples replaced, 08.24.2017_
 
 #### By _**Margaret Berry**_
 
@@ -27,9 +27,7 @@ _The user inputs a number, and the site produces a list of numbers from one to t
 
 ## Setup/Installation Requirements
 
-* _Instructions_
-
-_Installation_
+* _Install Ping-Pong by cloning this repository._
 
 ## Known Bugs
 

@@ -13,7 +13,7 @@ function countToNumber(userNumber){
 function makeFinalList(numberList) {
   for(var j = 1; j <= numberList.length; j++){
     if ( ((j % 3) !== 0) && ((j % 5) !== 0)){
-      finalList.push("<li>" + j + "</li>");
+      finalList.push("<li class='regNumber'>" + j + "</li>");
     } else if (j % 15 === 0) {
       finalList.push("<li class='purple-ping-pong'>" + "ping-pong" + "</li>");
     } else if (j % 5 === 0){
@@ -32,10 +32,12 @@ $(document).ready(function(){
     countToNumber(userNumber);
     makeFinalList(numberList);
     $('#finalList').append(finalList);
+    $('.table').show();
   });
   $('#reset').click(function(){
     $('#number').text();
     $('#finalList').empty();
+    $('.table').hide();
     numberList = [];
     finalList = [];
   });
